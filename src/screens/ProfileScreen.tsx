@@ -1,11 +1,8 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
-import { User } from "../types";
+import { User, routeParams } from "../types";
 
-type routeParams = {
-  user: User
-}
 
 const ProfileScreen = (): JSX.Element => {
   const navigation = useNavigation();
