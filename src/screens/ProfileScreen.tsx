@@ -11,6 +11,8 @@ const ProfileScreen = (): JSX.Element => {
   const navigation = useNavigation();
   const route = useRoute<RouteProp<Record<string, routeParams>, string>>();
   const user = route.params.user;
+  // É a mesma coisa
+  // const { user } = route.params; 
   return (
     <View style={styles.container}>
       <Image style={styles.avatar} source={{ uri: user.picture.large }} />
